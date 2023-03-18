@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <script>
+       document.cookie = "SameSite=None; Secure";
+     </script>
+    <style>
+      a {
+        text-decoration: none !important;
+      }
+
+      button{
+        background-color: #810CA8 !important;
+        border-radius: 25px !important;
+        font-size: 1rem !important;
+        border: none !important;
+        box-sizing: border-box !important;
+      }
+
+      button:hover{
+        background-color: white !important;
+        color: #810CA8 !important;
+        border-radius: 25px !important;
+        font-size: 1rem !important;
+        border: none !important;
+        box-sizing: border-box !important;
+      }
+
+      h2{
+       text-align: center !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <div class="container_nav">
+            <div>
+                <a href="index.html" class="brand"><img class="brand" src="/images/Picture 1.png"></a>
+                <div class="nav-toggle" id="navToggle">
+                    <img id="hamburger" class="navIcon" src="/images/hamb.png" alt="hamburger menu">
+                    <img id="navOpen" class="navIcon hidden" src="/images/X.png" alt="close hamburger">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="signup.html"><b>Free account</b></a></li>
+                    <li><a href="ultron_presentation.pdf">Ultron</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="form-container">
+            <h2>Get in touch!</h2>
+            <div class="container">
+              <form target="_blank" action="https://formsubmit.co/asimionescu33@yahoo.com" method="POST">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                      <input type="hidden" name="_next" value="http://localhost:63342/AlexWebsite/templates/thankyou.html">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                <button type="button" class="btn btn-lg btn-dark btn-block" id="clearBtn">Clear Form</button>
+                <input type="hidden" name="_captcha" value="false">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <a class="c-rights" href="https://www.linkedin.com/in/rafael-queiroz/">© 2023 Rafael Queiroz<br>All rights reserved</a>
+    </div>
+    <script src="script_code.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
